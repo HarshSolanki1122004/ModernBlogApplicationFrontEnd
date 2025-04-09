@@ -1,0 +1,114 @@
+.myblogs-container {
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(to right, #141e30, #243b55); /* dark blue gradient */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+}
+
+.myblogs-container h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #f8f9fa;
+}
+
+.myblog-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.myblog-card:hover {
+  transform: scale(1.02);
+}
+
+.myblog-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #ffda79;
+}
+
+.myblog-card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.author-line {
+  margin-top: 1rem;
+  font-style: italic;
+  color: #b0c4de;
+}
+
+.btn-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.edit {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.edit:hover {
+  background-color: #138496;
+}
+
+.delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete:hover {
+  background-color: #c82333;
+}
+
+.update {
+  background-color: #28a745;
+  color: white;
+}
+
+.update:hover {
+  background-color: #218838;
+}
+
+.cancel {
+  background-color: #6c757d;
+  color: white;
+}
+
+.cancel:hover {
+  background-color: #5a6268;
+}
+
+.edit-input,
+.edit-textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  outline: none;
+}
+
+.edit-input::placeholder,
+.edit-textarea::placeholder {
+  color: #cccccc;
+}
