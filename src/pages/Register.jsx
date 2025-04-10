@@ -22,7 +22,7 @@ const Register = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await API.post("/register", formData);
+      const res = await API.post("register", formData);
       toast.success(res.data);
       setFormData({ email: "", password: "" });
       navigate("/login");

@@ -22,7 +22,7 @@ const Login = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await API.post("/login", loginData);
+      const res = await API.post("login", loginData);
       const { token, userId } = res.data;
 
       localStorage.setItem("token", token);
